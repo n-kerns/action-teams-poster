@@ -1,0 +1,9 @@
+name: 'Teams PR Poster'
+description: 'Posts a PR open message to a given Teams webhook'
+inputs:
+  webhook_url:
+    description: 'The webhook of the Teams channel to post the PR message in.'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
